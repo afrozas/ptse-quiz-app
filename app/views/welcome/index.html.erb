@@ -1,5 +1,108 @@
-<h1> Plethora Inc. </h1>
-<p> An outcome by HON'AFROZ AHAMAD SIDDIQUI</p>
+<head>
+<title>PTSE | Plethora</title>
+<link rel="shortcut icon" type="image/png" href="/public/favicon.ico"/>
+</head>
+
+<style>
+.author {
+background-color: #eef4ef;
+background-image: -webkit-gradient(linear, left center, right center, from(rgb(238, 244, 239)), to(rgb(201, 199, 195)));
+background-image: -webkit-linear-gradient(left, rgb(238, 244, 239), rgb(201, 199, 195));
+background-image: -moz-linear-gradient(left, rgb(238, 244, 239), rgb(201, 199, 195));
+background-image: -o-linear-gradient(left, rgb(238, 244, 239), rgb(201, 199, 195));
+background-image: -ms-linear-gradient(left, rgb(238, 244, 239), rgb(201, 199, 195));
+background-image: linear-gradient(left, rgb(238, 244, 239), rgb(201, 199, 195));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eef4ef', EndColorStr='#c9c7c3');
+}
 
 
-<%= link_to 'PTSE Quiz', controller: 'questions' %>
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color:#2980b9;
+  margin:0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+.text {
+  color: $tcolor;
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+.underline {
+  @include underline(0.85em, 0.04em, $uline, $background);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+
+
+</style>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Plethora Inc.</h1>
+</header>
+
+
+<p><strong><%= link_to 'PTSE Quiz', controller: 'questions' %></strong></p>
+<br/>
+<!--<article class="article">
+  <h1></h1>
+  <p>developed by</p>
+  <h1></h1>
+<div class="text">
+  <div class="underline">ayaan siddiqui</div>
+</div>
+</article>-->
+
+
+<footer style="bottom: 0; width:100%; position:fixed;"> <div class="text">
+  <div class="underline">ayaan siddiqui</div>
+</div>   Copyright &copy; Plethora, Inc. </footer>
+</div>
+</div>
+
+</body>
+</html>
+
